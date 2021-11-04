@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>致敬逆行者们，希望花开疫散</title>
+		<meta name="description" content="哪有什么岁月静好，只不过有人在为你负重前行。" />
+		<meta name="Keywords" content="坚定信心，众志成城，坚决打赢疫情防控阻击战" />
+		<!-- 引入facicon.ico网页图标 -->
+		<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>    
+		<!-- 引入css 初始化的css 文件 -->
+		<link rel="stylesheet" href="css/base.css">
+	<style type="text/css">
+		/* 左浮动 */
+		.fl{
+			float: left;
+		}
+		/* 右浮动 */
+		.fr{
+			float: right;
+		}
+		/* 版心 */
+		.w{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		/* 字体图标 */
+		@font-face {
+			/*1. 这个字体名称要注意 icomoon*/
+			font-family: 'icomoon';
+			/*2. 一定要注意路径的问题*/
+			src:  url('./fonts/icomoon.eot?7kkyc2');
+			src:  url('./fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+			url('./fonts/icomoon.ttf?7kkyc2') format('truetype'),
+			url('./fonts/icomoon.woff?7kkyc2') format('woff'),
+			url('./fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		/* 添加body的背景颜色 */
+		/* 头部开始 */
+		.head{
+			height: 74px;
+			background: url(./img/wx.png) repeat-x;
+		}
+		/* 头部左边 */
+		.fl{
+			margin-top: 20px;
+		}
+		.fl li{
+			float: left;
+			margin: 0px 15px;
+		}
+		.fl a{
+			display: inline-block;
+			height: 33px;
+			line-height: 33px;
+			padding-left: 15px;
+			color: #fff;
+			background:url(./img/to.png) no-repeat;
+			font-size: 14px;
+		}
+		.fl a span{
+			display: inline-block;
+			height: 33px;
+			background: url(./img/to.png) no-repeat right top;
+			padding-right: 15px;
+		}
+		.fl a:hover,
+		.fl a:hover span{
+			background-image: url(./img/ao.png);
+		}
+		/* 头部左边结束 */
+		/* 头部右侧开始 */
+		.sou{
+			float: left;
+			width: 500px;
+			height: 33px;
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+		.fh{
+			float: left;
+			width: 400px;
+			height: 33px;
+			background-color: #fff;
+			border-radius: 100px 0 0 100px;
+			overflow: hidden;
+		}
+		.fh input{
+			color: #b3b3b3;
+			padding-left: 10px;
+		}
+		.rh{
+			float: right;
+			width: 100px;
+			height: 33px;
+			background-color: red;
+			border-radius: 0 100px 100px 0;
+		}
+		.rh span{
+			font-family: 'icomoon';
+			font-size: 18px;
+			height: 33px;
+			line-height: 33px;
+			margin-left: 35px;
+			color: #fff;
+		}
+		.rh:hover{
+			background-color: darkred;
+		}
+		/* 头部右侧结束 */
+		/* 头部结束 */
+		/* 文字开始 */
+		.wzd{
+			width: 1320px;
+			margin: 10px auto;
+		}
+		.first_wzd{
+			float: left;
+			margin-left: 45px;
+		}
+		.second_wzd{
+			float: left;
+			margin-left: 10px;
+		}
+		.third_wzd{
+			float: left;
+			margin-left: 10px;
+		}
+		.tuye img{
+			width: 400px;
+			height: 200px;
+		}
+		.wenye{
+			width: 380px;
+			height: 1400px;
+			padding: 10px;
+			margin-top: 10px;
+			border: 2px solid #8B0000;
+			border-radius: 10px;
+		}
+		.first_wzd .wenye{
+			background-color: cornflowerblue;
+		}
+		.second_wzd .wenye{
+			background-color: greenyellow;
+		}
+		.third_wzd .wenye{
+			background-color: orchid;
+		}
+		.second_wzd .wenye p{
+			margin-top: 12px;
+		}
+		.wenye p{
+			color: #000;
+			font-size: 16px;
+		}
+		/* 中间部分开始 */
+		.zhong{
+			margin-top: 20px;
+		}
+		.zhong ul{
+			height: 200px;
+		}
+		.zhong1,
+		.zhong2,
+		.zhong3{
+			display: block;
+			float: left;
+			height: 200px;
+			width: 200px;
+			box-sizing: border-box;
+			border-radius: 100px;
+			background-size: cover;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			margin-right: 240px;
+		}
+		ul li:nth-child(1){
+			background-image: url(img/zhong.jpg);
+		}
+		ul li:nth-child(2){
+			background-image: url(img/zhong1.jpg);
+		}
+		ul li:last-child{
+			margin-right: 0;
+			background-image: url(img/zhong2.jpg);
+		}
+		.zhongtwo{
+			margin-top: 20px;
+		}
+		.zhong_1{
+			background-color: royalblue;
+		}
+		.zhongtwo .zhong_1 p{
+			font-size: 30px;
+			font-weight: 700;
+			color: #000000;
+			text-align: center;
+		}
+		.zhong_2 .tr1{
+			display: inline-block;
+			width: 280px;
+			height: 150px;
+			padding: 10px;
+			background-color: burlywood;
+			color: #000000;
+			font-weight: 800;
+			font-size: 16px;
+		}
+		.zhong_2 .tr2{
+			display: inline-block;
+			float: right;
+			width: 880px;
+			height: 150px;
+			padding: 10px;
+			background-color: darksalmon;
+			color: #000;
+			font-weight: 800;
+			font-size: 16px;
+		}
+		.zhong_3 .tr3{
+			display: inline-block;
+			width: 280px;
+			height: 1210px;
+			padding: 10px;
+			background-color: turquoise;
+			color: #000000;
+			font-weight: 800;
+			font-size: 16px;
+		}
+		.zhong_3 .tr4{
+			display: inline-block;
+			float: right;
+			width: 880px;
+			height: 1210px;
+			padding: 10px;
+			background-color: palevioletred;
+			color: #000;
+			font-weight: 800;
+			font-size: 16px;
+		}
+		/* 中间部分结束 */
+		/* 底部开始 */
+		.db{
+			height: 280px;
+			background-color: #f3f5f7;
+			margin-top: 10px;
+		}
+		.sdb{
+			height: 30px;
+			border-bottom: 1px solid #FF0000;
+		}
+		.sdb h2{
+			font-weight: 700;
+			color: #000;
+			text-align: center;
+		}
+		.xdb ul li{
+			float: left;
+			margin-right: 52px;
+		}
+		.banquan {
+			float: left;
+			width: 1200px;
+			margin: 0;
+			background-color: black;
+		}
+		.banquan p{
+			font-size: 18px;
+			color: #FFFFFF;
+			text-align: center;
+		}
+		/* 底部结束 */
+		</style>
+	</head>
+	<body>
+	<!-- 头部开始 -->
+		<div class="head">
+			<div class="w">
+			<!-- 左盒子 -->
+				<div class="fl">
+					<ul>
+						<li>
+							<a href="index.html">
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a href="kyyx.html">
+								<span>抗疫英雄</span>
+							</a>
+						</li>
+						<li>
+							<a href="kysj.html">
+								<span>抗疫事迹</span>
+							</a>
+						</li>
+						<li>
+							<a href="kyjs.html">
+								<span>抗疫精神</span>
+							</a>
+						</li>
+						<li>
+							<a href="kytp.html">
+								<span>抗疫图片</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fr">
+					<div class="sou">
+						<div class="fh"><input type="text" value="请输入内容" style="width: 400px; height: 29px;" onmouseover=this.focus();this.select();   
+		onclick="if(value==defaultValue){value='';this.style.color='#000'}"   
+		onBlur="if(!value){value=defaultValue;this.style.color='#999'}"></div>
+						<div class="rh"><a href="https://www.baidu.com/" target="_blank"><span></span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部结束 -->
+		<div class="wzd clearfix">
+			<div class="first_wzd clearfix">
+				<div class="tuye"><img src="./img/logo1.jpg" alt=""></div>
+				<div class="wenye">
+					<h2>行走在防疫战线上的社区“勇士”</h2>
+					　　<p>——抗疫先进事迹材料村居、社区</p>
+					　　<p>&nbsp &nbsp 2020年春节是一个特殊的春节，新型冠状病毒来势汹汹，全国人民众志成城，投入到这场没有硝烟的战争中。在疫情肆虐之际，某开发区街道社区全体工作人员始终奋战在防疫抗疫第一线，有的坚守在岗24小时轮流值班;有的奔赴在入户排查第一线;有的不畏严寒上街悬挂宣传条幅;有的加班加点确保防疫物资发放到位...，从除夕至今，这些默默无闻的社区工作人员始终坚守在各自岗位上，披星戴月，用他们的实际行动守护着这座城市。</p>
+					　　<p>&nbsp &nbsp “隔门不隔心”，入户排查暖人心。“您好，我是某社区居委会的工作人员，请问最近有没有湖北或武汉的亲人来访?”“请问家人中有没有感冒发烧的?”……这是社区每位工作人员入户的开场白。自疫情起，社区书记带领全体社区工作者一起投入到疫情大排查工作中。为了不占用社区公共资源，不漏接居民疫情电话，所有工作人员全部用自己的手机进行电话排查，并反复叮嘱居民做好疫情防护工作，提醒居民时刻关注自己身体状态。通过网格化管理、地毯式排查，社区筑起疫情防控的坚实屏障。</p>
+					　<p>&nbsp &nbsp “微信运动几万步”，疫情宣传树信心。受疫情影响，春节期间大家都被“禁足”家中。然而，社区工作者日行几万步却成为常态。为进一步扩大新型冠状病毒感染的肺炎疫情防控宣传覆盖面，确保信息传递及时准确，在这个非常时期，社区工作人员爬上一层层楼梯，穿行在一个个街口，一次次站在不理解、抱怨声不断的居民门前，用真情感染着辖区每家每户。通过“线上”+“线下”多渠道宣传，社区第一时间发布权威信息、防控工作动态、疫情防控科普知识及服务信息，已累计发布各类信息n余条。</p>
+					　<p> &nbsp &nbsp “服务点对点”，最美娘子军很贴心。某社区多名工作人员，仅有几名男同志，可算得上真正的基层“娘子军”，她们都是平均年龄20岁左右的青年女同志，正是这群上有父母、下有孩子的年轻妈妈们，不仅承担着宣传、排查、防控物品发放各项工作，还要保障居民日常生活需求，尤其是隔离返乡人员、武汉返乡人员的医院就诊出行、日用品采购等工作，都由这支娘子军负责。疫情面前，这群基层最美“娘子军”以责任和担当认真做着每一项联防联控工作，社区党员们受其影响，也自发加入了防控战斗中。</p>
+					　<p> &nbsp &nbsp 社区只是千千万万奋斗在疫情一线的基层队伍之一。重任在肩头，使命在心间，相信在全社会的共同努力下，我们一定会早日打赢这场疫情防控阻击战。</p>
+				</div>
+			</div>
+			<div class="second_wzd clearfix">
+				<div class="tuye"><img src="./img/logo2.jpg" alt=""></div>
+					<div class="wenye">
+						<h2>巾帼不让须眉，新时代的“红色娘子军”</h2>
+						<p>——抗疫先进事迹材料医护人员、教师、社区干部</p>
+						<p>&nbsp &nbsp 2020年这个春节注定与往年不同，面对来势汹汹的新冠肺炎疫情，在某某县, 流动着一道道红色身影，她们有的是医生护士，有的是老师，有的是党员干部,她们坚持冲锋在一线、默默奉献在基层，用柔弱的身躯，筑起一道道坚固防线，以自己的实际行动展现了打赢疫情防控阻击战的巾帼力量。
+</p>
+						<p>&nbsp &nbsp她们是冲锋在前、战在一线的白衣天使。有这样一道红色身影，她们来自定点救治医院的护理医疗队。三分治疗七分护理”，疫情发生以来，某家医院的几名护士主动请战，申请到疫情防控定点医院参与救治工作，她们组建了临时护理党支部，重温了入党誓词，立志要在抗击疫情中发挥先锋模范作用，展现巾帼儿女风采。时间就是生命，她们每天8个小时的工作时间连轴转，为了节省医疗物资，为了方便照护患者，与时间赛跑，她们第一次穿上纸尿裤，做到上岗前少喝水、不喝水，尽最大努力降低防护服的更换频率，不知道衣服被汗水浸湿了又干,干了又湿多少次。哪有什么白衣天使，不过是一群女子，换了一身衣服，在死神手里抢人罢了。
+</p>
+					<p>&nbsp &nbsp她们是以身作则、守在一线的辛勤园丁。有这样一道红色身影，她们来自某县幼儿园。三尺讲台，她们是教书育人的辛勤园丁;抗疫战场，她们是无怨无悔的志愿先锋。一方面，她们认真落实教育系统关于疫情防控工作精神，积极通过班级群，认真做好每个班级、每名学生的防控知识宣传、家庭外出情况排查等工作，切实加强对学生和家长的宣传教育，告知家长做好家庭防范工作，切实筑牢教育防疫的第一道防线。另一方面，她们认真践行把人民群众生命安全和身体健康放在第一位的工作宗旨，积极响应县委县政府号召,主动参与小区包保工作,实行24小时值班值守，换岗不脱岗，严格管理小区人员及车辆出入，禁止非小区成员和车辆进入小区，确保小区“封闭式”管理落到实处，全力守护我们的家园，为坚决打赢打好疫情防控阻击战贡献自己的力量。</p>
+					<p>&nbsp &nbsp她们是敢于担当、走在一线的党员干部。有这样一道红色身影，她们来自各个社区的党员干部。因疫情防控压力大，人手不足，县委县政府全城招募志愿者，来自各个社区的几名党员干部(其中有几名女志愿者)积极参与，踊跃报名，主动参与宣传引导、便民服务、秩序维护、心理疏导等志愿服务中来。她们面带口罩，戴着“红袖章”，穿梭在各个交通道口、管控卡点、社区门口，张贴宣传标语，发放《倡议书》、《一封信》，劝导群众不要串门访客、不要在公共场所聚集，确保不漏一户，不落一人。截至目前，累计发放《倡议书》《一封信》万余份、张贴标语千余条，劝导居民停办喜宴百桌次。他们用自己平凡的善举，用爱筑起一道坚固的健康防线。</p>
+					<p>&nbsp &nbsp在我们身边，这样的一道道身影还有很多很多，她们奋战在疫情防控的每个角落，撑起了战“疫”的“半边天”，是新时代的“红色娘子军”</p>
+				</div>
+			</div>
+			<div class="third_wzd clearfix">
+				<div class="tuye"><img src="./img/logo3.jpg" alt=""></div>
+					<div class="wenye">
+						<h2>抗疫先进事迹材料线上线下联防联动、筑牢防控“铜墙铁壁”</h2>
+						　　<p>——抗疫先进事迹材料乡镇、街道</p>
+						　　<p> &nbsp &nbsp自启动疫情防控工作以来，某街道党工委、办事处高度重视、全力以赴，认真落实上级部署要求，立即进入战斗状态，照“外防输入，内防扩散”的要求，建立“2+4+1”管控体系，完善工作措施，依托信息平台开展线上线下联防联控，坚持压实责任、严防死守，共同筑牢疫情防控的铜墙
+铁壁。</p>
+　　<p> &nbsp &nbsp打造“排头兵”，积小优为全优。一是完善组织架构。成立疫情防控指挥部和工作领导小组，优化了n余个小组分工。二是坚持党建引领。划分某个党员责任区，成立“战地支部”n余个、党员突击队n余个，动员辖区党员、社会志愿XX余人积极参与防疫一线，营造争当“抗疫卫士”的氛围，让党旗飘扬在战“疫”最前沿。三是落实专班机制。抽调XX余名核心骨干，成立高新园区、薄弱社区、企业复工等工作专班，瞄准最艰苦、最困难的“山头”开展攻坚，及时补齐短板软肋。</p>
+　　<p> &nbsp &nbsp筑牢“防火墙”，积小稳为大稳。一是严防交通“关口”。联合卫生院、公安、交警在海湾大桥出口设置24小时监测点，劝返外来车辆，检查外地车辆XX余辆，检测体温n余万余人次。二是捋顺社区“卡口”。坚持“既防病毒又便利生活”理念，紧盯阻断病毒传播途径，创建社区“阳光卡口”n余个，开展规范化管控，确保防疫、生活两不误。三是管好企业“门口”。摸排辖区n余家企业、n余处工地，对XX名职工规范建档。对复工企业、工地开展督查，规范隔离区设置、人员车辆管控，开展厂区卫生清洁和消杀作业，切断传播途径。</p>
+　　<p> &nbsp &nbsp织密“防护网”，积跬步至千里。一是完善网格力量。依托某个网格，n余名网格员，对辖区内社区、企业、建筑工地等场所的外地返青人员进行了n余次全面摸排。二是全时全域巡防。坚持“设卡+24小时巡查”结合，引入安保托管，突出老旧无物业小区重点，对开放式楼座进行全面管控，全面排查辖区n余处老旧、零星小区n余户共n余人，消除管控死角。三是开展环卫消杀。累计出动人员n余万余人次，每日对辖区XX个广场、集市进行清理，清运垃圾n余吨。对n余处公共场所开展消杀作业n余万平米。</p>
+　　<p> &nbsp &nbsp打造“平安符”，积小安为大安。一是宣传防控知识。共发放《致XX居民的一封信》、《防控明白纸》n余万余份，印发《防控知识手册》1万余册，悬挂“阳光战疫”标语横幅n余余条，发布媒体信息XX余篇。二是助力安全生产。探索引入“健康云系统”管理，对复工企业职工体温监测情况进
+行数字化管理，用“技防”助力“人防”。大力宣传市中小企业保经营稳发展18条政策，积极为复工企业排忧解难，搞好服务保障。三是补充防护物资。设置专项资金，多渠道争取货源，及时储备发放口罩、消毒液、测温仪等基本防疫物资。累计发放口罩n余万个，消毒液n余桶，防护服n余件，防护面罩n余件，红外测温计n余个，防护手套n余余副等物资。</p>
+				</div>
+			</div>
+		</div>
+		<!-- 中间部分开始 -->
+		<div class="zhong w">
+			<ul>
+				<li class="zhong1 clearfix"></li>
+				<li class="zhong2 clearfix"></li>
+				<li class="zhong3 clearfix"></li>
+			</ul>
+		</div>
+		<div class="zhongtwo w">
+			<div class="zhong_1"><p>防疫个人先进事迹</p></div>
+			<div class="zhong_2">
+				<span class="tr1">&nbsp &nbsp严格落实上级决策部署。疫情就是“集结号”,中央、省、市、区紧密部署疫情防控工作，衡阳市石鼓区合江街道党工委严格落实上级决策部署，进一步压实疫情防控工作责任，高标准、严要求开展疫情防控工作。</span>
+				<span class="tr2">&nbsp &nbsp新型冠状病毒感染的肺炎疫情发生以来，习近平总书记多次对疫情防控工作作出重要指示，要求各级党组织和广大党员干部带领广大人民群众坚决贯彻落实中央决策部署，紧紧依靠人民群众坚决打赢疫情防控阻击战。阿克苏地区机关事务管理部门作为党的政治机关、行政机关、服务机关，在疫情防控中自觉做到思想上重视、行动上紧跟、责任上压实，认真贯彻落实中央、自治区党委和地委新型冠状病毒感染肺炎疫情防控工作会议精神，充分发挥办公区集中整合的优势，注重全面部署、科学防范、精准施策，动员党员干部投身疫情防控第一线，把各项措施抓细、抓实、抓到位，在疫情防控工作中走在前、作表率，为机关党员干部群众生命安全和身体健康保驾护航。</span>
+			</div>
+			<div class="zhong_3">
+				<span class="tr3">&nbsp &nbsp多措并举开展防控工作。一是强化宣传引导。通过采取张贴标语、发放宣传册、入户宣传、微信群、QQ群等方式，向辖区群众传达疫情防控相关知识，树立良好导向，发动群众积极配合参与疫情防控工作。二是强化值班值守，全街党员干部放弃休假，坚守疫情防控一线。三是强化摸排力度，细致、全面、准确、安全开展排查工作，做到入网入格入家庭。四是强化保障力度，全街采购口罩、医用酒精、消毒液，确保辖区疫情防控物资保障到位。</span>
+				<span class="tr4"> &nbsp &nbsp我叫xxx，是一名退役军人，也是一名共产党员。自XX年参加工作以来，在卫生防疫工作中兢兢业业， 勤勤恳恳，虽没做出什么惊天动地的大事业，也没有赢得鲜花和掌声，文秘资源网 但是我可以无愧地说:我尽到了自己的职责，没有辜负党和部队对我的多年培养，在奉献中找到了自己的人生价值。<br/>
+<h3>&nbsp &nbsp一、立足本职，扎实学习，较快完成了从退伍军人到防疫人员的角色转变</h3>
+&nbsp &nbsp我于1995年入伍，在部队中，我始终以军人的标准严格要求自己，遵守纪律，刻苦训练，受到了部队领导和战友们的一致好评，多次被评为“优秀士兵”、“优秀学兵”、“训练标兵”。4年的军旅生活，磨练了我不怕吃苦、刚毅果敢的军人性格。XX年，我积极响应回家号召，回到地方参与家乡建设，被组织分配到防疫站消杀科。分配后，我暗下决心:自己是一名军人，一定要以军人的标准把工作干好。为此，我始终把学习业务、提高工作本领第一要务，坚持做到三点:一是扎实学习基本业务，主动购置了业务资料，充分利用一切可利用的时间，加强自学。同时，参加了成人高考，系统学习了专业知识，进一步提高了自身专业理论水平。二是虚心向同事们请教，每当学习中遇到不懂的问题，虚心向其他同事请教，认真学习。在相互交流中，既增长了见识，丰富了知识储备，同时增近了同事间的友情，搞好了团结。三是积极参与实践，主动要求下乡开展消杀工作，和同志们一道并肩战斗，完成了上级交给的各项工作任务，通过实践锻练，不断提高实际工作本领。如今，我已经从当初的一窍不通成为了现在的业务骨干，成功地实现了角色转变。<br/>
+<h3>&nbsp &nbsp二、恪尽职守，爱岗敬业，一心扑在事业上</h3>
+&nbsp &nbsp作为一名军人，同时又是一名党员，在我心中时刻想的都是工作，而自己家里的事却总是挂不上号。为此，妻子没少数落我，但我始终认为:工作上的事再小也是大，家里的事再大也是小。参加工作后，父亲的身体也每况愈下，作为他唯一的儿子，我是不称职的，因为我一直忙于工作，很少抽出时间守在他身边尽孝，伺候老人的事只能交给两个姐姐。XX年，父亲病危，急需照顾，我深知，这是最后孝敬他老人家的机会，而那时恰逢单位内的消杀科刚刚成立，面临人手少、任务重、工作难开展等一系列困难，同样需要我倾注全部精力。一方面是难以割舍的父子之情，一方面是千头万绪的工作，我满情着对父亲的愧疚之情，坚持工作在第一线，仅用晚上时间，抽空陪陪老人，做点简单的家务。期间，没有向组织讲过一次困难，没有因为家庭原因请过一天事假。当年，父亲不幸去世，当我跪在他老人家坟前，用双手把最后一捧埋藏他的土壤填好后，号陶大哭，只有我清楚，我对父亲的愧疚之情只有来世才能报答了。<br/>
+<h3>&nbsp &nbsp三、身先士卒，勇挑重担，关键时刻挺身而出</h3>
+&nbsp &nbsp~年的防治非典工作是我经历的一场硬仗。当初，面对这史无前例的疫情，我作为卫生防疫工作人员，担负着防非督导的任务，始终站在了防治最前沿。因为是第一次面临这种可怕的疫情，而且深深知道它的危害性，心情极度紧张。但是，想到自己是军人，军人应该以保家卫国、亲民爱民为民为已任，想到在部队训练时奋勇向前的情形，顿时血液沸腾，身先士卒，投入到一次次战斗中。在为发热人员门诊时，我整天零距离接触隔离人员，有一次，一位从北京的封闭疫区偷跑回来的人员引起了大家的恐慌，这时需要有人对其进行医学观察。我说:“我还年轻，参过军，身体比你们棒，不要和我争，我去!”说完穿上隔离衣，戴上口罩就走了。在疫区消毒时，出于安全考虑，我和同志们一起，全副武装，穿着厚厚的隔离服，戴着十八层的口罩，背着60多个喷雾器，冒着酷暑工作在第一线，为疫区消毒。这样在疫区坚持了无数个日日夜夜，我没有被疫情吓倒，却由于身体不支，晕倒在消毒战场...... <br/>
+<h3>四、严格执法，铁面无私，义不容辞的履行防疫监督责任</h3>
+&nbsp &nbsp监督执法主要面对的是管理相对人，为了进一步净化医疗市场，确保百姓平安，我和科内同志百余次地深入到街乡村镇调查、踩点，迅速出击，发现一户取缔一户，不放过一个非法行医人和非法行医场所，切实体现了对人民负责、甘于奉献的精神。<br/>
+&nbsp &nbsp在执法过程中，面对群众的不理解、不支持简直是家常便饭，所以经常挨骂，我总是耐心解释。去年，我县某地一家诊所的非法问题引起当地百姓的强烈不满，经过三番五次上门劝阻，苦口婆心，仍起不到群众满意的效果，该诊所是你来我走，多次反弹。针对这种情况，我同科内人员一道现场执法，先对诊所负责人进行有关法律法规宣传教育，对诊所的卫生基本设施提出要求，同时按照规定，拟对其进行行政罚款。诊所负责人一听罚款，立即开始耍赖，胡搅蛮缠，并拉出他年近80的老母出来与我们对抗。针对这种阵势，我一方面耐心解释，好言相劝，搀扶他老母离开，一方面对诊所负责人进行严厉批评。最后，迫于我的强硬态度，他终于妥协，接受了罚款，问题得到了妥善解决。<br/>
+&nbsp &nbsp一些违法人员见我硬的不吃，就来软的，想方设法请吃饭、送礼品给我，想用“糖衣炮弹”将我~。我对此，坚决不予理睬，始终做到不拿群众一根线，不吃群众一顿饭，坚持原则，秉公执法。同时警告家属，把好关口，不犯错误。<br/>
+&nbsp &nbsp几年来，在组织的关怀下，在领导和同事的帮助下，我在工作中取得了一些成绩，受到了大家的认可，连续三年荣获“优秀共产党员”的光荣称号。但在荣誉面前，我感到最多的是责任和压力。今后，我将继续以军人的标准、以党员的先进性严格要求自己，扎扎实实、无怨无悔投入到工作中，投入到全身心热爱的卫生防疫事业中，做出更大的贡献，为军人争光，为党旗添彩。<br/>
+&nbsp &nbsp优秀教师最新个人先进事迹材料教师个人先进事迹材料:平凡岗位 党员本色团员个人先进事迹材料优秀教师个人先进事迹技术专业大学生个人先进事迹材料2018优秀教师个人先进事迹材料范文师德模范个人先进事迹材料派出所民警法制副校长个人先进事迹简析个人先进事迹材料的写作食堂管理个人先进事迹<br/></span>
+			</div>
+		</div>
+		<!-- 中间部分结束 -->
+		<!-- 底部开始 -->
+		<div class="db w">
+			<div class="sdb">
+				<h2>抗疫宣传图册</h2>
+			</div>
+			<div class="xdb">
+				<ul>
+					<li><img src="img/zh1.png" alt=""></li>
+					<li><img src="img/zh2.png" alt=""></li>
+					<li><img src="img/zh3.png" alt=""></li>
+					<li><img src="img/zh4.png" alt=""></li>
+				</ul>
+			</div>
+				<div class="banquan"><p>Copyright◎2021年第十六届江西省大学生计算机作品赛版权所有最佳分辨率: 1360x768</p></div>
+		</div>
+	<!-- 底部结束 -->
+	<!--引用外部jquery类库-->
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<!--最后引用-->
+	<script type="text/javascript" src="./js/common.js"></script>
+	</body>
+</html>

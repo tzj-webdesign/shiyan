@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>致敬逆行者们，希望花开疫散</title>
+		<meta name="description" content="哪有什么岁月静好，只不过有人在为你负重前行。" />
+		<meta name="Keywords" content="坚定信心，众志成城，坚决打赢疫情防控阻击战" />
+		<!-- 引入facicon.ico网页图标 -->
+		<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>    
+		<!-- 引入css 初始化的css 文件 -->
+		<link rel="stylesheet" href="css/base.css">
+	<style type="text/css">
+		/* 左浮动 */
+		.fl{
+			float: left;
+		}
+		/* 右浮动 */
+		.fr{
+			float: right;
+		}
+		/* 版心 */
+		.w{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		/* 字体图标 */
+		@font-face {
+			/*1. 这个字体名称要注意 icomoon*/
+			font-family: 'icomoon';
+			/*2. 一定要注意路径的问题*/
+			src:  url('./fonts/icomoon.eot?7kkyc2');
+			src:  url('./fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+			url('./fonts/icomoon.ttf?7kkyc2') format('truetype'),
+			url('./fonts/icomoon.woff?7kkyc2') format('woff'),
+			url('./fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		/* 添加body的背景颜色 */
+		/* 头部开始 */
+		.head{
+			height: 74px;
+			background: url(./img/wx.png) repeat-x;
+		}
+		/* 头部左边 */
+		.fl{
+			margin-top: 20px;
+		}
+		.fl li{
+			float: left;
+			margin: 0px 15px;
+		}
+		.fl a{
+			display: inline-block;
+			height: 33px;
+			line-height: 33px;
+			padding-left: 15px;
+			color: #fff;
+			background:url(./img/to.png) no-repeat;
+			font-size: 14px;
+		}
+		.fl a span{
+			display: inline-block;
+			height: 33px;
+			background: url(./img/to.png) no-repeat right top;
+			padding-right: 15px;
+		}
+		.fl a:hover,
+		.fl a:hover span{
+			background-image: url(./img/ao.png);
+		}
+		/* 头部左边结束 */
+		/* 头部右侧开始 */
+		.sou{
+			float: left;
+			width: 500px;
+			height: 33px;
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+		.fh{
+			float: left;
+			width: 400px;
+			height: 33px;
+			background-color: #fff;
+			border-radius: 100px 0 0 100px;
+			overflow: hidden;
+		}
+		.fh input{
+			color: #b3b3b3;
+			padding-left: 10px;
+		}
+		.rh{
+			float: right;
+			width: 100px;
+			height: 33px;
+			background-color: red;
+			border-radius: 0 100px 100px 0;
+		}
+		.rh span{
+			font-family: 'icomoon';
+			font-size: 18px;
+			height: 33px;
+			line-height: 33px;
+			margin-left: 35px;
+			color: #fff;
+		}
+		.rh:hover{
+			background-color: darkred;
+		}
+		/* 头部右侧结束 */
+		/* 头部结束 */
+		/* 心形图片开始 */
+		.xin{
+			width: 1200px;
+			height: 1020px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		.first ul li{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.first ul .m1{
+			margin-left: 180px;
+		}
+		.first ul .m2{
+			margin-left: 180px;
+		}
+		.second ul li{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.third ul li{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.fourth ul li{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.fourth ul .m3{
+			margin-left: 180px;
+		}
+		.fifth ul li{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.fifth ul .m4{
+			margin-left: 350px;
+		}
+		.sixth ul li{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-left: 520px;
+			margin-top: 10px;
+		}
+		/* 心形图片结束 */
+			/* 底部开始 */
+			.db{
+				height: 280px;
+				background-color: #f3f5f7;
+				margin-top: 10px;
+			}
+			.sdb{
+				height: 30px;
+				border-bottom: 1px solid #FF0000;
+			}
+			.sdb h2{
+				font-weight: 700;
+				color: #000;
+				text-align: center;
+			}
+			.xdb ul li{
+				float: left;
+				margin-right: 52px;
+			}
+			.banquan {
+				float: left;
+				width: 1200px;
+				margin: 0;
+				background-color: black;
+			}
+			.banquan p{
+				font-size: 18px;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			/* 底部结束 */
+		</style>
+	</head>
+	<body>
+	<!-- 头部开始 -->
+		<div class="head">
+			<div class="w">
+			<!-- 左盒子 -->
+				<div class="fl">
+					<ul>
+						<li>
+							<a href="index.html">
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a href="kyyx.html">
+								<span>抗疫英雄</span>
+							</a>
+						</li>
+						<li>
+							<a href="kysj.html">
+								<span>抗疫事迹</span>
+							</a>
+						</li>
+						<li>
+							<a href="kyjs.html">
+								<span>抗疫精神</span>
+							</a>
+						</li>
+						<li>
+							<a href="kytp.html">
+								<span>抗疫图片</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fr">
+					<div class="sou">
+						<div class="fh"><input type="text" value="请输入内容" style="width: 400px; height: 29px;" onmouseover=this.focus();this.select();   
+		onclick="if(value==defaultValue){value='';this.style.color='#000'}"   
+		onBlur="if(!value){value=defaultValue;this.style.color='#999'}"></div>
+						<div class="rh"><a href="https://www.baidu.com/" target="_blank"><span></span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部结束 -->
+		<!-- 心形图片开始 -->
+		<div class="xin">
+			<div class="first clearfix">
+				<ul>
+					<li class="m1"><img src="img/b1%20(1).png" alt=""></li>
+					<li><img src="img/b1%20(2).png" alt=""></li>
+					<li class="m2"><img src="img/b1%20(3).png" alt=""></li>
+					<li><img src="img/b1%20(4).png" alt=""></li>
+				</ul>
+			</div>
+			<div class="second clearfix">
+				<ul>
+					<li><img src="img/b1%20(5).png" alt=""></li>
+					<li><img src="img/b1%20(6).png" alt=""></li>
+					<li><img src="img/b1%20(7).png" alt=""></li>
+					<li><img src="img/b1%20(8).png" alt=""></li>
+					<li><img src="img/b1%20(9).png" alt=""></li>
+					<li><img src="img/b1%20(10).png" alt=""></li>
+					<li><img src="img/b1%20(11).png" alt=""></li>
+				</ul>
+			</div>
+			<div class="third clearfix">
+				<ul>
+					<li><img src="img/b1%20(12).png" alt=""></li>
+					<li><img src="img/b1%20(13).png" alt=""></li>
+					<li><img src="img/b1%20(14).png" alt=""></li>
+					<li><img src="img/b1(15).png" alt=""></li>
+					<li><img src="img/b1(16).png" alt=""></li>
+					<li><img src="img/b1(17).png" alt=""></li>
+					<li><img src="img/b1(18).png" alt=""></li>
+				</ul>
+			</div>
+			<div class="fourth clearfix">
+				<ul>
+					<li class="m3"><img src="img/b1(19).png" alt=""></li>
+					<li><img src="img/b1(20).png" alt=""></li>
+					<li><img src="img/b1(21).png" alt=""></li>
+					<li><img src="img/b1(22).png" alt=""></li>
+					<li><img src="img/b1(23).png" alt=""></li>
+				</ul>
+			</div>
+			<div class="fifth clearfix">
+				<ul>
+					<li class="m4"><img src="img/b1(24).png" alt=""></li>
+					<li><img src="img/b1(25).png" alt=""></li>
+					<li><img src="img/b1(26).png" alt=""></li>
+				</ul>
+			</div>
+			<div class="sixth clearfix">
+				<ul>
+					<li><img src="img/b1(27).png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 心形图片结束 -->
+		<!-- 底部开始 -->
+		<div class="db w">
+			<div class="sdb">
+				<h2>抗疫宣传图册</h2>
+			</div>
+			<div class="xdb">
+				<ul>
+					<li><img src="img/zh1.png" alt=""></li>
+					<li><img src="img/zh2.png" alt=""></li>
+					<li><img src="img/zh3.png" alt=""></li>
+					<li><img src="img/zh4.png" alt=""></li>
+				</ul>
+			</div>
+				<div class="banquan"><p>Copyright◎2021年第十六届江西省大学生计算机作品赛版权所有最佳分辨率: 1360x768</p></div>
+		</div>
+	<!-- 底部结束 -->
+	<!--引用外部jquery类库-->
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<!--最后引用-->
+	<script type="text/javascript" src="./js/common.js"></script>
+	</body>
+</html>

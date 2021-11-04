@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>致敬逆行者们，希望花开疫散</title>
+		<meta name="description" content="哪有什么岁月静好，只不过有人在为你负重前行。" />
+		<meta name="Keywords" content="坚定信心，众志成城，坚决打赢疫情防控阻击战" />
+		<!-- 引入facicon.ico网页图标 -->
+		<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>    
+		<!-- 引入css 初始化的css 文件 -->
+		<link rel="stylesheet" href="css/base.css">
+		<style>
+			/* 左浮动 */
+			.fl{
+				float: left;
+			}
+			/* 右浮动 */
+			.fr{
+				float: right;
+			}
+			/* 版心 */
+			.w{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			/* 字体图标 */
+			@font-face {
+				/*1. 这个字体名称要注意 icomoon*/
+				font-family: 'icomoon';
+				/*2. 一定要注意路径的问题*/
+				src:  url('./fonts/icomoon.eot?7kkyc2');
+				src:  url('./fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+				url('./fonts/icomoon.ttf?7kkyc2') format('truetype'),
+				url('./fonts/icomoon.woff?7kkyc2') format('woff'),
+				url('./fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			/* 添加body的背景颜色 */
+			/* 头部开始 */
+			.head{
+				height: 74px;
+				background: url(./img/wx.png) repeat-x;
+			}
+			/* 头部左边 */
+			.fl{
+				margin-top: 20px;
+			}
+			.fl li{
+				float: left;
+				margin: 0px 15px;
+			}
+			.fl a{
+				display: inline-block;
+				height: 33px;
+				line-height: 33px;
+				padding-left: 15px;
+				color: #fff;
+				background:url(./img/to.png) no-repeat;
+				font-size: 14px;
+			}
+			.fl a span{
+				display: inline-block;
+				height: 33px;
+				background: url(./img/to.png) no-repeat right top;
+				padding-right: 15px;
+			}
+			.fl a:hover,
+			.fl a:hover span{
+				background-image: url(./img/ao.png);
+			}
+			/* 头部左边结束 */
+			/* 头部右侧开始 */
+			.sou{
+				float: left;
+				width: 500px;
+				height: 33px;
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+			.fh{
+				float: left;
+				width: 400px;
+				height: 33px;
+				background-color: #fff;
+				border-radius: 100px 0 0 100px;
+				overflow: hidden;
+			}
+			.fh input{
+				color: #b3b3b3;
+				padding-left: 10px;
+			}
+			.rh{
+				float: right;
+				width: 100px;
+				height: 33px;
+				background-color: red;
+				border-radius: 0 100px 100px 0;
+			}
+			.rh span{
+				font-family: 'icomoon';
+				font-size: 18px;
+				height: 33px;
+				line-height: 33px;
+				margin-left: 35px;
+				color: #fff;
+			}
+			.rh:hover{
+				background-color: darkred;
+			}
+			/* 头部右侧结束 */
+			/* 头部结束 */
+			/* 文章开始 */
+			/* 第一个开始 */
+			.shang{
+				width: 1200px;
+				height: 400px;
+				margin: 0 auto;
+				background-color: #fffae8;
+				margin-top: 20px;
+				border: 2px solid #8B0000;
+				border-radius: 20px;
+			}
+			.zs figure img{
+				width: 400px;
+				height: 300px;
+				transition:all 0.6s ease;
+				position:absolute;
+				opacity:1;
+			}
+			.shang figure{
+				width: 400px;
+				height: 300px;
+				max-width: 400px;
+				max-height: 300px;
+				overflow: hidden;
+				position: relative;
+				background-color: #000;
+			}
+			.zs figure p{
+				position:absolute;
+				color:#fff;
+				transform:translate(-400px,0);
+				top:35%;
+				left:25%;
+				transition:all 0.6s ease;
+			}
+			.zs figure:hover img{
+				transform:scale(1.2,1.2);
+				transition:all 0.6s ease;
+				opacity:0.6;
+			}
+			.zs figure:hover p{
+			    transform:translate(0,0);
+			    transition:all 0.6s ease;
+			}
+			/* 左盒子 */
+			.zs{
+				float: left;
+				width: 400px;
+				height: 300px;
+				margin-top: 20px;
+				margin-left: 20px;
+				box-shadow: 2px 2px 2px rgba(0,0,0, .4);
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			/* 左盒子结束 */
+			.rs{
+				float: left;
+				width: 720px;
+				background-color: #f3f5f7;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.rs p{
+				font-size: 16px;
+				font-weight: 700;
+				color: #000;
+			}
+			/* 右盒结束 */
+			/* 第一个结束 */
+			/* 第二个开始 */
+			.erhe{
+				width: 1200px;
+				height: 280px;
+				background-color: #00e3e3;
+				margin: 0 auto;
+				margin-top: 20px;
+				border: 2px solid #8B0000;
+				border-radius: 20px;
+			}
+			.ze{
+				float: left;
+				width: 400px;
+				height: 244px;
+				margin-top: 20px;
+				margin-left: 20px;
+				box-shadow: 2px 2px 2px rgba(0,0,0, .4);
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			.ze img{
+				width: 400px;
+				height: 244px;
+			}
+			.re{
+				float: left;
+				width: 720px;
+				background-color: #f3f5f7;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.re p{
+				font-size: 16px;
+				font-weight: 700;
+				color: #000;
+			}
+			/* 第三部分 */
+			.sanhe{
+				width: 1200px;
+				height: 320px;
+				margin: 0 auto;
+				margin-top: 20px;
+				border: 2px solid #8B0000;
+				border-radius: 20px;
+				background-color: pink;
+			}
+			.shz{
+				float: left;
+				width: 400px;
+				height: 275px;
+				margin-top: 20px;
+				margin-left: 20px;
+				box-shadow: 2px 2px 2px rgba(0,0,0, .4);
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			.shz img{
+				width: 400px;
+				height: 275px;
+			}
+			.shy{
+				float: left;
+				width: 720px;
+				background-color: #f3f5f7;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.shy p{
+				font-size: 16px;
+				font-weight: 700;
+				color: #000;
+			}
+			/* 第四部分 */
+			.sihe{
+				width: 1200px;
+				height: 573px;
+				margin: 0 auto;
+				margin-top: 20px;
+				border: 2px solid #8B0000;
+				border-radius: 20px;
+				background-color: #55aaff;
+			}
+			.sihe .whhz{
+				float: left;
+				width: 720px;
+				background-color: #f3f5f7;
+				margin-left: 20px;
+				margin-top: 20px;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			.sihe .whhy{
+				float: right;
+				width: 400px;
+				height: 533px;
+				margin-right: 20px;
+				margin-top: 20px;
+				box-shadow: 2px 2px 2px rgba(0,0,0, .4);
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			.whhz p{
+				font-size: 16px;
+				font-weight: 700;
+				color: #000;
+			}
+			/* 文章结束 */
+			/* 底部开始 */
+			.db{
+				height: 280px;
+				background-color: #f3f5f7;
+				margin-top: 10px;
+			}
+			.sdb{
+				height: 30px;
+				border-bottom: 1px solid #FF0000;
+			}
+			.sdb h2{
+				font-weight: 700;
+				color: #000;
+				text-align: center;
+			}
+			.xdb ul li{
+				float: left;
+				margin-right: 52px;
+			}
+			.banquan {
+				float: left;
+				width: 1200px;
+				margin: 0;
+				background-color: black;
+			}
+			.banquan p{
+				font-size: 18px;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			/* 底部结束 */
+		</style>
+	</head>
+	<body>
+		<!-- 头部开始 -->
+		<div class="head">
+			<div class="w">
+			<!-- 左盒子 -->
+				<div class="fl">
+				<ul>
+					<li>
+						<a href="index.html">
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="kyyx.html">
+							<span>抗疫英雄</span>
+						</a>
+					</li>
+					<li>
+						<a href="kysj.html">
+							<span>抗疫事迹</span>
+						</a>
+					</li>
+					<li>
+						<a href="kyjs.html">
+							<span>抗疫精神</span>
+						</a>
+					</li>
+					<li>
+						<a href="kytp.html">
+							<span>抗疫图片</span>
+						</a>
+					</li>
+				</ul>
+				</div>
+				<div class="fr">
+					<div class="sou">
+						<div class="fh"><input type="text" value="请输入内容" style="width: 400px; height: 29px;" onmouseover=this.focus();this.select();   
+      onclick="if(value==defaultValue){value='';this.style.color='#000'}"   
+      onBlur="if(!value){value=defaultValue;this.style.color='#999'}"></div>
+						<div class="rh"><a href="https://www.baidu.com/" target="_blank"><span></span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部结束 -->
+		<!-- 文章开始 -->
+		<div class="shang clearfix">
+			<!-- 左边盒子 -->
+			<div class="zs">
+				<figure>
+					<img src="./img/tu11.jpg" alt="">
+					<p>让党徽在抗疫一线熠熠生辉 南阳市农业农村局党员干部奋战疫情 ...</p>
+				</figure>
+			</div>
+			<!-- 右盒子 -->
+			<div class="rs">
+				<p>&nbsp &nbsp只要心怀暖阳，何惧疫情不灭。在当前全民抗疫的关键时刻，面对疫情防控物质紧缺难题，他迎难而上、主动作为，急忙从村里赶往省城，自掏腰包、千辛万苦联络货源购买了1万只口罩赠送给所驻镇村用于疫情防控，他就是克度镇先进村驻村第一书记曹凤杰同志。</p>
+				　<p>&nbsp &nbsp疫情就是命令，防控就是责任。大年初五，一接到归队“抗疫”的通知后，还正在老家过年的他，马上自驾10个小时，一路奔波一路逢检赶到村里报到，并立即投身到所驻先进村的疫情防控工作中。作为驻村第一书记，他被推举为先进村疫情防控党员先锋队队长，每天坚持与其他党员干部一起进组入户进行宣传动员，认真开展相关情况排查，积极向群众宣传疫情防护知识，动员农村老党员、乡贤寨老发动村民共同参与疫情防控。可以说，无论是在之前的脱贫攻坚战场，还是当前疫情防控一线，曹凤杰同志都能时刻擎起迎风飞舞的“党旗红”，展党员担当,保一方平安，赢得了广大干部群众的认可和信赖，更得到当地党委、政府送予一面锦旗:最美书记关键时刻有情怀，大爱无疆疫情面前显担当!</p>
+				　　<p>&nbsp &nbsp面对疫情，曹凤杰同志率先垂范，冲锋在前，用自己的实际行动生动践行了一名共产党员的初心与使命，有力彰显出一名优秀共产党员的红色力量!</p>
+			</div>
+		</div>
+		<div class="erhe clearfix">
+			<!-- 左边盒子 -->
+			<div class="re">
+				<p>&nbsp &nbsp 他是院长，也是病患。他叫张定宇。作为收治患者最多的武汉金银潭医院的一院之长，他另外的身份是一名渐冻症患者。行动不便的他，已在抗疫一线坚持了30余天。每天接上千个电话，处理无数突发事件的他，无暇顾及感染新型冠状病毒的妻子，始终坚守在抗击疫情最前沿。他说：“我很内疚，我也许是个好医生，但不是个好丈夫。我们结婚28年了，我也害怕，怕她身体扛不过去，怕失去她！”别人眼里风风火火的铁血男儿，害怕失去挚爱的缱绻，湿了他的泪眼。一天睡眠不到两个小时的张定宇，正在和病魔争夺时间。“我必须跑得更快，才能跑赢时间，把重要的事情做完;我必须跑得更快，才能从病毒手里，抢回更多的病人。”“以后我会被固定在轮椅上，我现在为什么不多做一点？”张院长，您舍身忘我、无私无畏的爱民情怀，英雄硬汉形象彰显。</p>
+			</div>
+			<div class="ze">
+				<a href="#" target="_blank">
+					<img src="./img/zdy.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="sanhe clearfix">
+			<!-- 左边盒子 -->
+			<div class="shz">
+				<a href="#" target="_blank">
+					<img src="./img/llj.jpg" alt="">
+				</a>
+			</div>
+			<!-- 右盒子 -->
+			<div class="shy">
+			<p>&nbsp &nbsp李兰娟，中国工程院院士，中国感染病学家，她主要从事传染病临床、科研和教学工作，擅长各类肝炎、感染性疾病、新发突发传染病诊治。在2003年非典型肺炎肆虐时期，她提出系列的防治措施，为浙江取得抗击“非典”胜利发挥了关键性作用。</p>
+			<p>&nbsp &nbsp在春运临近高峰，武汉疫情呈蔓延趋势时，她顶着压力，几度建议“封一座城，护一国安康”。党中央迅速采纳了她的建议，有效遏制了病毒的扩散，这一举措不知让多少人保住了健康和生命。</p>
+			<p>&nbsp &nbsp73岁的李兰娟院士还主动请缨，进驻武汉，和武汉的医护工作一起接诊病人。她是一个不折不扣的医生。七十多岁的老人，一连7天每天只睡三个小时，她怕一眨眼，鲜活的生命会从她指间溜走。</p>
+			<p>&nbsp &nbsp她抢在时间的前面，率先推出阿比朵尔、达芦那韦治疗新冠肺炎，有效抑制了新冠肺炎病毒。她为了尽快找到“对症下药”的疫苗，她率领科研团队，日夜兼程。</p>
+			<p>她是我们生命的守护神!</p>
+			</div>
+		</div>
+		<div class="sihe clearfix">
+			<!-- 左边盒子 -->
+			<div class="whhz">
+				<p>&nbsp &nbsp2月12日晚，早过了下班时间的急诊科护士王欢欢脱下防护装备，正用手轻揉自己的脸，想缓解一下长时间穿戴隔离面罩在脸上磨出的印记。虽略有疲色，但她的眼眸里仍透着刚毅与坚定。</p>
+				<p>&nbsp &nbsp在疫情期间，王欢欢不仅承担急诊科的本职护理工作，还是医院发热门诊的专职护士。春节前她就进入发热门诊值守，连续在一线奋战十天，整个春节假期都没有休息。有同事关心她“别这么拼，休息一会”，她笑着反问“没事，我是党员，关键时候我不上谁上”。老家的亲人曾问她“春节还回来吗？”，她只能推说工作上忙可能还回不来。她不敢告诉年迈的父母，自己在“危险”的地方值守，对年幼的孩子也只能忍下思念，早早送回老家，连年夜饭也只是在医院匆匆对付。</p>
+				<p>&nbsp &nbsp每次进入发热门诊工作王欢欢都要穿上厚重的防护服、防护口罩和护目镜，为了减少防护装备的穿脱次数，她时常长时间不吃、不喝、不上厕所工作，毫无怨言。</p>
+				<p>&nbsp &nbsp她因为基础扎实、技术到位，还同时承担起发热门诊护理带教老师的职责，指导进入发热门诊增援的护理人员及收款处非医人员如何做好防护、规范工作。每天下班前，她都抽出时间耐心指导年轻护士解决发热门诊工作中遇到的问题。不仅如此，细心的她还发现进入发热门诊的患者大多非常紧张、害怕，她就主动和患者聊聊天、说说话，安慰他们。不少患者在她的疏导下平复了心情，每每看到患者放松后的神情，她都感觉工作没有白费，自己心里也暖呼呼的。</p>			
+				<p>&nbsp &nbsp在与疫情的正面交锋中，发热门诊的一线医护人员是冲锋在前的排头兵，他们奋战一线，尽己所能，为守护人民群众健康贡献着自己的专业力量。</p></p>
+				<p>&nbsp &nbsp人们都知道这些白衣天使都是英雄，可这些英雄也都是人啊！他们也都是父母的儿女，也都是孩子的爹娘，也都是爱人的另一半。但是，他们更是祖国的儿女！在祖国需要的时候，他们尽己所能帮助祖国渡过难关。即便如此，当我想到他们的家人的时候，我还是湿润了眼眶……这种舍小家为大家的奉献精神，不论在何时，不论在何地，都应该被仰视！</p>
+			</div>
+			<!-- 右盒子 -->
+			<div class="whhy">
+				<a href="#" target="_blank">
+					<img src="./img/whh.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- 文章结束 -->
+		<!-- 底部开始 -->
+		<div class="db w">
+			<div class="sdb">
+				<h2>抗疫宣传图册</h2>
+			</div>
+			<div class="xdb">
+				<ul>
+					<li><img src="img/zh1.png" alt=""></li>
+					<li><img src="img/zh2.png" alt=""></li>
+					<li><img src="img/zh3.png" alt=""></li>
+					<li><img src="img/zh4.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="banquan"><p>Copyright◎2021年第十六届江西省大学生计算机作品赛版权所有最佳分辨率: 1360x768</p></div>
+		</div>
+		<!-- 底部结束 -->
+		<!--引用外部jquery类库-->
+		        <script type="text/javascript" src="./js/jquery.js"></script>
+				<!--最后引用-->
+				<script type="text/javascript" src="./js/common.js"></script>
+	</body>
+</html>
